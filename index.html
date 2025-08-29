@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>فاتورة</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 20px;
+    background: #fff;
+  }
+  
+  h1, h2, h3 {
+    margin: 0;
+  }
+  
+  .header {
+    text-align: right;
+    margin-bottom: 15px;
+  }
+  
+  .header strong {
+    font-weight: bold;
+  }
+  
+  .info-section {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .info-section td, .info-section th {
+    border: 1px solid #ddd;
+    padding: 6px 8px;
+  }
+
+  .info-section th {
+    background-color: #4a5a67;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .info-section tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .right-align {
+    text-align: right;
+    font-weight: bold;
+  }
+  
+  .qr-code {
+    float: left;
+    margin: 15px 20px 15px 0;
+  }
+  
+  .watermark {
+    position: absolute;
+    opacity: 0.1;
+    font-size: 64px;
+    font-weight: bold;
+    top: 40%;
+    left: 30%;
+    transform: rotate(-45deg);
+    color: #888;
+    user-select: none;
+  }
+  
+  .footer {
+    font-size: 10px;
+    color: #999;
+    margin-top: 40px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>فاتورة</h1>
+  <div>الحالة : <strong>صحيح</strong></div>
+  <div>تاريخ التقديم : ٢٠٢٥/٠٧/٢٠ ١٤:٤٥:٠١ PM (القاهرة UTC: ٠٩:٤٥:٠١ AM)</div>
+  <div>تاريخ الإصدار : ٢٠٢٥/٠٧/٢٠ ١٤:٤٣:٠٢ PM (القاهرة UTC: ٠٩:٤٣:٠٢ AM)</div>
+</div>
+
+<div class="qr-code">
+  <img src="https://api.qrserver.com/v1/create-qr-code/?data=SampleData&size=120x120" alt="QR Code">
+  <div>للمزيد من المعلومات، فضلا قم بمسح هذا الباركود</div>
+</div>
+
+<table class="info-section">
+  <thead>
+    <tr>
+      <th colspan="2">البائع</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="right-align">
+        الاسم : <strong>رحسان للتجارة والتوريدات العموميه</strong><br/>
+        رقم التسجيل : <strong>766892948#</strong>
+      </td>
+      <td>
+        كود النشاط الضريبى: 56<br/>
+        المحور المركزي مول بتري الشيخ زايد الجيزه<br/>
+        قسم الشيخ زايد، الجيزه، EG
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width:100%; margin-bottom: 20px;" border="0" cellpadding="4" cellspacing="0">
+  <tr>
+    <td><strong>الرقم الالكتروني :</strong> H90XPTDVWH4QGJ75XESFKK0K10</td>
+    <td><strong>رقم الفاتورة المصدرة للمصدر :</strong></td>
+  </tr>
+  <tr>
+    <td><strong>مرجع طلب الشراء :</strong></td>
+    <td></td>
+  </tr>
+</table>
+
+<table class="info-section" style="margin-bottom:20px;">
+  <thead>
+    <tr>
+      <th colspan="2">المشتري</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="right-align">
+        الاسم : <strong>عادل احمد محمود</strong><br />
+        الرقم القومي : <strong>30005270100518#</strong>
+      </td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="info-section" style="width: 100%; margin-bottom: 20px;">
+  <thead>
+    <tr>
+      <th>اسم الكود</th>
+      <th>كود الصنف</th>
+      <th>الوصف</th>
+      <th>الكمية/ نوع الوحدة</th>
+      <th>سعر الوحدة (ج.م)</th>
+      <th>قيمة المبيعات (ج.م)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>قطع غيار / معدات</td>
+      <td>EG-766892948-121</td>
+      <td>علبه اشتعال</td>
+      <td>2.00 / EA</td>
+      <td>1300.00</td>
+      <td>2600.00</td>
+    </tr>
+    <tr>
+      <td>قطع غيار / معدات</td>
+      <td>EG-766892948-121</td>
+      <td>طقم محولات بالاسلك</td>
+      <td>1.00 / EA</td>
+      <td>400.00</td>
+      <td>400.00</td>
+    </tr>
+    <tr>
+      <td>قطع غيار / معدات</td>
+      <td>EG-766892948-121</td>
+      <td>علبه زيت باكم</td>
+      <td>4.00 / EA</td>
+      <td>1700.00</td>
+      <td>6800.00</td>
+    </tr>
+    <tr>
+      <td>قطع غيار / معدات</td>
+      <td>EG-766892948-121</td>
+      <td>فاوس اشارة خلفي</td>
+      <td>6.00 / EA</td>
+      <td>2000.00</td>
+      <td>13000.00</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="info-section" style="width:300px;">
+  <tbody>
+    <tr>
+      <td>إجمالى المبيعات (ج.م)</td>
+      <td>14,800.00</td>
+    </tr>
+    <tr>
+      <td>إجمالي الخصم (ج.م)</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>إجمالي خصم الصنف (ج.م)</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>ضريبة القيمة المضافة (ج.م)</td>
+      <td>683.20</td>
+    </tr>
+    <tr>
+      <td>خصم الفاتورة الاضافي (ج.م)</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td><strong>إجمالى المبلغ (ج.م)</strong></td>
+      <td><strong>15,483.20</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<div style="margin-top: 40px; font-size: 12px;">
+  الرقم الداخلي : 1376<br/>
+  توقيع : رحسان للتجارة و التوريدات العموميه
+</div>
+
+<div class="footer">
+  تم اصدار هذه الفاتورة غير ملزمة للضريبة العامة الموردة للمنتجات (ETA) وقد تم تطبيق الشروط والأحكام الخاصة بها. لا تحمل الهيئة المصرية للضرائب أى مسئولية عن هذه المعلومات الموردة هنا.
+  <br />
+  تاريخ انشاء الملف : 2025/07/20 09:47 AM التوقيت العالمي +02:00
+</div>
+
+<div class="watermark">فاتورة تجريبية</div>
+
+</body>
+</html>
